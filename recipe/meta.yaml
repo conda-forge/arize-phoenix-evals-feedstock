@@ -12,15 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8,<3.12
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.8,<3.12
+    - python >={{ python_min }},<3.12
     - pandas
     - tqdm
     - typing-extensions >=4.5,<5
@@ -28,6 +28,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
   imports:

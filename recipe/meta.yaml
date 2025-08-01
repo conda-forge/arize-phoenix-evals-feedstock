@@ -24,6 +24,7 @@ requirements:
     - pandas
     - tqdm
     - typing-extensions >=4.5,<5
+    - pystache
 
 test:
   requires:

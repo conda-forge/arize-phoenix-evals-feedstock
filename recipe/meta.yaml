@@ -1,5 +1,5 @@
 {% set name = "arize-phoenix-evals" %}
-{% set version = "0.25.0" %}
+{% set version = "0.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arize_phoenix_evals-{{ version }}.tar.gz
-  sha256: 2c488658e03be74a4fe67c9565f94a69a528e0f9207a805465a5b7fcca2cce66
+  sha256: 5ab838c97cfc204b70678368472680bdbab3fc1e3f35fbb1e7fc460c88656cd7
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - pandas
     - tqdm
     - typing-extensions >=4.5,<5
+    - pystache
 
 test:
   requires:

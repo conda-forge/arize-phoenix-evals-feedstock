@@ -25,6 +25,7 @@ requirements:
     - tqdm
     - typing-extensions >=4.5,<5
     - pystache
+    - glom
 
 test:
   requires:

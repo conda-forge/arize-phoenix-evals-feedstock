@@ -25,7 +25,10 @@ requirements:
     - tqdm
     - typing-extensions >=4.5,<5
     - pystache
+    - pydantic
     - glom
+    - openinference-semantic-conventions
+    - opentelemetry-api
 
 test:
   requires:

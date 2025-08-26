@@ -26,7 +26,7 @@ requirements:
     - typing-extensions >=4.5,<5
     - pystache
     - pydantic
-    - glom
+    - jsonpath-ng
     - openinference-semantic-conventions
     - opentelemetry-api
 

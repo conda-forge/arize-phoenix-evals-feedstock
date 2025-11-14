@@ -28,7 +28,7 @@ requirements:
     - pydantic
     - jsonpath-ng
     - openinference-semantic-conventions
-    - openinference.instrumentation
+    - openinference-instrumentation
     - opentelemetry-api
 
 test:

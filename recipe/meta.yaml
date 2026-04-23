@@ -1,5 +1,5 @@
 {% set name = "arize-phoenix-evals" %}
-{% set version = "2.0.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arize_phoenix_evals-{{ version }}.tar.gz
-  sha256: 8b25ada02bc2af787113b53ba087759a0187c59cdea517f8f25b67f3e4d125e7
+  sha256: 838ab9167d540198a52dba4e50db938053d1025f10658faafcd32706c8b40a86
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - pydantic
     - jsonpath-ng
     - openinference-semantic-conventions
+    - openinference-instrumentation
     - opentelemetry-api
 
 test:

@@ -1,5 +1,5 @@
 {% set name = "arize-phoenix-evals" %}
-{% set version = "3.1.1" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arize_phoenix_evals-{{ version }}.tar.gz
-  sha256: 82287fbffb768f27a18e74f164cd9cea8e25f428e03b19340475580cfda18b83
+  sha256: 8d75cc241c873889e047e6d30cd92cb1b62207aa48572c56f9fe5880625d2cd7
 
 build:
   noarch: python

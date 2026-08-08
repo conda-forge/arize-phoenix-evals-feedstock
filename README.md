@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `arize-phoenix-evals` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install arize-phoenix-evals
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install arize-phoenix-evals
 ```
 
-It is possible to list all of the versions of `arize-phoenix-evals` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add arize-phoenix-evals
+# for installing globally
+pixi global install arize-phoenix-evals
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `arize-phoenix-evals` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search arize-phoenix-evals --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search arize-phoenix-evals --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search arize-phoenix-evals --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds arize-phoenix-evals --channel conda-forge
 # List dependencies of `arize-phoenix-evals`:
 mamba repoquery depends arize-phoenix-evals --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
